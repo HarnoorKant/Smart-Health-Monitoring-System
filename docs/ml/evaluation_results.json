@@ -1,0 +1,322 @@
+{
+  "model_version": "1.0.0",
+  "evaluation_timestamp_utc": "2026-10-13T17:06:06Z",
+  "dataset_checksum": "50f391190cd58f87636c0f6ae45731f97791563210275f14e5208c75be96ec82",
+  "train_rows": 1048,
+  "eval_rows": 452,
+  "train_ratio": 0.7,
+  "eligible_train_windows": 1048,
+  "eligible_eval_windows": 452,
+  "hyperparameters": {
+    "model_version": "1.0.0",
+    "n_estimators": 100,
+    "max_samples": 256,
+    "contamination": 0.05,
+    "max_features": 1.0,
+    "random_state": 42,
+    "decision_threshold": 0.5,
+    "score_scaling_temperature": 0.15,
+    "min_training_samples": 50,
+    "feature_schema_version": "1.0.0",
+    "temperature_unit": "F",
+    "feature_names": [
+      "hr_latest",
+      "hr_rolling_mean",
+      "hr_rolling_median",
+      "hr_rolling_std",
+      "hr_rolling_mad",
+      "hr_window_min",
+      "hr_window_max",
+      "hr_abs_change",
+      "hr_rel_change",
+      "hr_trend_slope",
+      "hr_baseline_dev",
+      "hr_norm_baseline_dev",
+      "spo2_latest",
+      "spo2_rolling_mean",
+      "spo2_rolling_median",
+      "spo2_rolling_std",
+      "spo2_rolling_mad",
+      "spo2_window_min",
+      "spo2_window_max",
+      "spo2_abs_change",
+      "spo2_rel_change",
+      "spo2_trend_slope",
+      "spo2_baseline_dev",
+      "spo2_norm_baseline_dev",
+      "temp_latest",
+      "temp_rolling_mean",
+      "temp_rolling_median",
+      "temp_rolling_std",
+      "temp_rolling_mad",
+      "temp_window_min",
+      "temp_window_max",
+      "temp_abs_change",
+      "temp_rel_change",
+      "temp_trend_slope",
+      "temp_baseline_dev",
+      "temp_norm_baseline_dev",
+      "cross_hypoxia_tachycardia_ratio",
+      "cross_vital_strain_index"
+    ]
+  },
+  "eval_score_distribution": {
+    "min": 0.20464451472047995,
+    "max": 0.666593043378635,
+    "mean": 0.2879309226190193,
+    "median": 0.26015584937376623,
+    "p25": 0.23771206842078207,
+    "p75": 0.29947471999817077,
+    "p95": 0.5095798268889337
+  },
+  "eval_flagged_count": 26,
+  "eval_flagged_percent": 5.752212389380531,
+  "patient_breakdown": {
+    "P101": {
+      "count": 88,
+      "flagged": 5,
+      "flagged_percent": 5.68,
+      "mean_score": 0.2909
+    },
+    "P102": {
+      "count": 91,
+      "flagged": 5,
+      "flagged_percent": 5.49,
+      "mean_score": 0.2845
+    },
+    "P103": {
+      "count": 89,
+      "flagged": 5,
+      "flagged_percent": 5.62,
+      "mean_score": 0.2923
+    },
+    "P104": {
+      "count": 98,
+      "flagged": 6,
+      "flagged_percent": 6.12,
+      "mean_score": 0.2842
+    },
+    "P105": {
+      "count": 86,
+      "flagged": 5,
+      "flagged_percent": 5.81,
+      "mean_score": 0.2882
+    }
+  },
+  "top_historical_examples": [
+    {
+      "rank": 1,
+      "patient_id": "P101",
+      "timestamp": "2023-10-11 07:15:00",
+      "score": 0.666593043378635,
+      "status": "mild_anomaly",
+      "raw_measurements": {
+        "heart_rate": 134.0,
+        "spo2": 89.3,
+        "temperature": 102.9
+      },
+      "top_features": [
+        {
+          "feature": "cross_vital_strain_index",
+          "value": 10.98,
+          "baseline_median": 0.16,
+          "robust_deviation": 8.69
+        },
+        {
+          "feature": "temp_window_max",
+          "value": 102.9,
+          "baseline_median": 99.2,
+          "robust_deviation": 8.32
+        },
+        {
+          "feature": "temp_rolling_std",
+          "value": 3.11,
+          "baseline_median": 0.6,
+          "robust_deviation": 7.11
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "patient_id": "P102",
+      "timestamp": "2023-10-08 08:09:00",
+      "score": 0.6534485010727388,
+      "status": "mild_anomaly",
+      "raw_measurements": {
+        "heart_rate": 124.0,
+        "spo2": 90.5,
+        "temperature": 102.6
+      },
+      "top_features": [
+        {
+          "feature": "temp_window_min",
+          "value": 102.6,
+          "baseline_median": 97.9,
+          "robust_deviation": 10.57
+        },
+        {
+          "feature": "temp_rolling_median",
+          "value": 102.6,
+          "baseline_median": 98.6,
+          "robust_deviation": 8.99
+        },
+        {
+          "feature": "temp_rolling_mean",
+          "value": 102.6,
+          "baseline_median": 98.58,
+          "robust_deviation": 8.89
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "patient_id": "P101",
+      "timestamp": "2023-10-09 11:26:00",
+      "score": 0.6533138619240362,
+      "status": "mild_anomaly",
+      "raw_measurements": {
+        "heart_rate": 133.0,
+        "spo2": 88.9,
+        "temperature": 102.9
+      },
+      "top_features": [
+        {
+          "feature": "cross_vital_strain_index",
+          "value": 11.07,
+          "baseline_median": 0.16,
+          "robust_deviation": 8.76
+        },
+        {
+          "feature": "temp_window_max",
+          "value": 102.9,
+          "baseline_median": 99.2,
+          "robust_deviation": 8.32
+        },
+        {
+          "feature": "temp_rolling_std",
+          "value": 3.46,
+          "baseline_median": 0.6,
+          "robust_deviation": 8.11
+        }
+      ]
+    }
+  ],
+  "synthetic_benchmark_results": [
+    {
+      "scenario": "Normative Physiological Control",
+      "expected_anomaly": false,
+      "score": 0.2674,
+      "is_anomaly": false,
+      "result_status": "normal_like",
+      "matched_expectation": true,
+      "latency_ms": 10.84,
+      "top_features": [
+        {
+          "feature": "spo2_window_min",
+          "value": 98.0,
+          "baseline_median": 94.8,
+          "robust_deviation": 3.08
+        },
+        {
+          "feature": "hr_window_max",
+          "value": 75.0,
+          "baseline_median": 94.5,
+          "robust_deviation": 2.39
+        },
+        {
+          "feature": "temp_rolling_std",
+          "value": 0.0,
+          "baseline_median": 0.6,
+          "robust_deviation": 1.69
+        }
+      ]
+    },
+    {
+      "scenario": "Acute Tachycardia Spike (HR > 130 bpm)",
+      "expected_anomaly": true,
+      "score": 0.4457,
+      "is_anomaly": false,
+      "result_status": "elevated_variability",
+      "matched_expectation": false,
+      "latency_ms": 9.44,
+      "top_features": [
+        {
+          "feature": "hr_window_max",
+          "value": 135.0,
+          "baseline_median": 94.5,
+          "robust_deviation": 4.97
+        },
+        {
+          "feature": "hr_trend_slope",
+          "value": 145.38,
+          "baseline_median": 0.0,
+          "robust_deviation": 4.52
+        },
+        {
+          "feature": "hr_baseline_dev",
+          "value": 55.0,
+          "baseline_median": 0.0,
+          "robust_deviation": 3.71
+        }
+      ]
+    },
+    {
+      "scenario": "Acute Hypoxemic Desaturation (SpO2 < 87%)",
+      "expected_anomaly": true,
+      "score": 0.4302,
+      "is_anomaly": false,
+      "result_status": "elevated_variability",
+      "matched_expectation": false,
+      "latency_ms": 9.72,
+      "top_features": [
+        {
+          "feature": "spo2_window_min",
+          "value": 85.0,
+          "baseline_median": 94.8,
+          "robust_deviation": 9.44
+        },
+        {
+          "feature": "spo2_trend_slope",
+          "value": -30.0,
+          "baseline_median": 0.0,
+          "robust_deviation": 5.88
+        },
+        {
+          "feature": "spo2_baseline_dev",
+          "value": -11.3,
+          "baseline_median": 0.0,
+          "robust_deviation": 5.08
+        }
+      ]
+    },
+    {
+      "scenario": "Combined Hyperthermic & Tachycardic Stress",
+      "expected_anomaly": true,
+      "score": 0.5548,
+      "is_anomaly": true,
+      "result_status": "mild_anomaly",
+      "matched_expectation": true,
+      "latency_ms": 10.81,
+      "top_features": [
+        {
+          "feature": "cross_vital_strain_index",
+          "value": 9.5,
+          "baseline_median": 0.16,
+          "robust_deviation": 7.5
+        },
+        {
+          "feature": "temp_window_max",
+          "value": 102.5,
+          "baseline_median": 99.2,
+          "robust_deviation": 7.42
+        },
+        {
+          "feature": "temp_latest",
+          "value": 102.5,
+          "baseline_median": 98.6,
+          "robust_deviation": 5.26
+        }
+      ]
+    }
+  ]
+}

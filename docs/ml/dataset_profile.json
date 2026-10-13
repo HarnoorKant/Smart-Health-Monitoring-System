@@ -1,0 +1,146 @@
+{
+  "filepath": "data/raw/kaggle_health_dataset.csv",
+  "filename": "kaggle_health_dataset.csv",
+  "file_size_bytes": 58751,
+  "sha256_hash": "50f391190cd58f87636c0f6ae45731f97791563210275f14e5208c75be96ec82",
+  "row_count": 1500,
+  "column_count": 5,
+  "columns": [
+    "patient_id",
+    "heart_rate",
+    "spo2",
+    "temperature_f",
+    "timestamp"
+  ],
+  "dtypes": {
+    "patient_id": "str",
+    "heart_rate": "int64",
+    "spo2": "float64",
+    "temperature_f": "float64",
+    "timestamp": "str"
+  },
+  "missing_values_per_column": {
+    "patient_id": 0,
+    "heart_rate": 0,
+    "spo2": 0,
+    "temperature_f": 0,
+    "timestamp": 0
+  },
+  "full_duplicate_rows": 0,
+  "duplicate_patient_timestamp_pairs": 0,
+  "invalid_timestamp_count": 0,
+  "unique_patients": [
+    "P101",
+    "P102",
+    "P103",
+    "P104",
+    "P105"
+  ],
+  "patient_observation_counts": {
+    "P101": 293,
+    "P102": 302,
+    "P103": 296,
+    "P104": 325,
+    "P105": 284
+  },
+  "metric_statistics": {
+    "heart_rate": {
+      "min": 60.0,
+      "max": 135.0,
+      "mean": 82.896,
+      "median": 82.0,
+      "std": 15.106157066603027,
+      "non_numeric_count": 0,
+      "inf_count": 0,
+      "null_count": 0
+    },
+    "spo2": {
+      "min": 88.1,
+      "max": 99.9,
+      "mean": 96.49119999999999,
+      "median": 96.6,
+      "std": 2.275214340129083,
+      "non_numeric_count": 0,
+      "inf_count": 0,
+      "null_count": 0
+    },
+    "temperature_f": {
+      "min": 97.5,
+      "max": 103.0,
+      "mean": 98.68626666666664,
+      "median": 98.6,
+      "std": 0.9702228010847402,
+      "non_numeric_count": 0,
+      "inf_count": 0,
+      "null_count": 0
+    }
+  },
+  "temporal_profiles": {
+    "P101": {
+      "patient_id": "P101",
+      "observation_count": 293,
+      "first_timestamp": "2023-10-01 08:19:00",
+      "last_timestamp": "2023-10-11 11:28:00",
+      "is_chronological": true,
+      "interval_min_minutes": 5.0,
+      "interval_max_minutes": 311.0,
+      "interval_median_minutes": 35.0,
+      "interval_mean_minutes": 49.96232876712329,
+      "gaps_greater_than_2h": 21
+    },
+    "P102": {
+      "patient_id": "P102",
+      "observation_count": 302,
+      "first_timestamp": "2023-10-01 09:06:00",
+      "last_timestamp": "2023-10-11 13:05:00",
+      "is_chronological": true,
+      "interval_min_minutes": 5.0,
+      "interval_max_minutes": 261.0,
+      "interval_median_minutes": 35.0,
+      "interval_mean_minutes": 48.63455149501661,
+      "gaps_greater_than_2h": 19
+    },
+    "P103": {
+      "patient_id": "P103",
+      "observation_count": 296,
+      "first_timestamp": "2023-10-01 08:28:00",
+      "last_timestamp": "2023-10-11 13:20:00",
+      "is_chronological": true,
+      "interval_min_minutes": 5.0,
+      "interval_max_minutes": 290.0,
+      "interval_median_minutes": 35.0,
+      "interval_mean_minutes": 49.80338983050847,
+      "gaps_greater_than_2h": 22
+    },
+    "P104": {
+      "patient_id": "P104",
+      "observation_count": 325,
+      "first_timestamp": "2023-10-01 09:27:00",
+      "last_timestamp": "2023-10-11 13:11:00",
+      "is_chronological": true,
+      "interval_min_minutes": 5.0,
+      "interval_max_minutes": 253.0,
+      "interval_median_minutes": 30.5,
+      "interval_mean_minutes": 45.135802469135804,
+      "gaps_greater_than_2h": 24
+    },
+    "P105": {
+      "patient_id": "P105",
+      "observation_count": 284,
+      "first_timestamp": "2023-10-01 08:13:00",
+      "last_timestamp": "2023-10-11 13:35:00",
+      "is_chronological": true,
+      "interval_min_minutes": 5.0,
+      "interval_max_minutes": 275.0,
+      "interval_median_minutes": 36.0,
+      "interval_mean_minutes": 52.02120141342756,
+      "gaps_greater_than_2h": 23
+    }
+  },
+  "is_overall_chronological": true,
+  "has_diagnostic_labels": false,
+  "has_anomaly_labels": false,
+  "has_respiratory_rate": false,
+  "has_blood_pressure": false,
+  "data_quality_flags": []
+}

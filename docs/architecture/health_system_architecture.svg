@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1250" viewBox="0 0 1800 1250">
+<defs>
+  <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#475569"/></marker>
+  <marker id="arrowOrange" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#D97706"/></marker>
+  <marker id="arrowPurple" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#7C3AED"/></marker>
+  <marker id="arrowPink" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#DB2777"/></marker>
+  <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#0284C7"/></marker>
+  <style>
+    text { font-family: Arial, Helvetica, sans-serif; fill: #0F172A; }
+    .title { font-size: 30px; font-weight: 700; letter-spacing: 0.3px; }
+    .subtitle { font-size: 16px; fill: #475569; }
+    .groupLabel { font-size: 19px; font-weight: 700; }
+    .owner { font-size: 15px; font-weight: 700; }
+    .head { font-size: 20px; font-weight: 700; }
+    .body { font-size: 16px; }
+    .small { font-size: 14px; fill: #334155; }
+    .edgeLabel { font-size: 14px; font-weight: 600; paint-order: stroke; stroke: #F8FAFC; stroke-width: 6px; stroke-linejoin: round; }
+  </style>
+</defs>
+<rect width="1800" height="1250" fill="#F8FAFC"/>
+<text x="900" y="45" text-anchor="middle" class="title">SMART HEALTH MONITORING SYSTEM</text>
+<text x="900" y="74" text-anchor="middle" class="subtitle">Team architecture • Simulated live data • MySQL • Cloud-connected application</text>
+
+<!-- group frames -->
+<rect x="40" y="100" width="820" height="225" rx="20" fill="#F0F7FF" stroke="#93C5FD" stroke-width="2"/>
+<text x="65" y="132" class="groupLabel" fill="#1D4ED8">CLIENT APPLICATIONS</text><text x="810" y="132" text-anchor="end" class="owner" fill="#1D4ED8">PERSON 3</text>
+<rect x="78" y="157" width="342" height="135" rx="14" fill="#FFFFFF" stroke="#60A5FA" stroke-width="2"/>
+<text x="249" y="189" text-anchor="middle" class="head">Flutter Patient App</text>
+<text x="249" y="219" text-anchor="middle" class="body">Live vitals • history • alerts</text>
+<text x="249" y="245" text-anchor="middle" class="body">Consent • source status</text>
+<text x="249" y="271" text-anchor="middle" class="small">Mobile application</text>
+<rect x="463" y="157" width="360" height="135" rx="14" fill="#FFFFFF" stroke="#60A5FA" stroke-width="2"/>
+<text x="643" y="189" text-anchor="middle" class="head">React Doctor Dashboard</text>
+<text x="643" y="219" text-anchor="middle" class="body">Patient search • charts • alerts</text>
+<text x="643" y="245" text-anchor="middle" class="body">Demo controls • acknowledgement</text>
+<text x="643" y="271" text-anchor="middle" class="small">Web application</text>
+
+<rect x="965" y="100" width="795" height="225" rx="20" fill="#FFFBEB" stroke="#FBBF24" stroke-width="2"/>
+<text x="990" y="132" class="groupLabel" fill="#92400E">DEMO HEALTH API</text><text x="1730" y="132" text-anchor="end" class="owner" fill="#92400E">PERSON 1</text>
+<rect x="1000" y="157" width="325" height="135" rx="14" fill="#FFFFFF" stroke="#F59E0B" stroke-width="2"/>
+<text x="1162" y="189" text-anchor="middle" class="head">FastAPI Simulator</text>
+<text x="1162" y="219" text-anchor="middle" class="body">Start • stop • status</text>
+<text x="1162" y="245" text-anchor="middle" class="body">Change scenario on request</text>
+<text x="1162" y="271" text-anchor="middle" class="small">Internal control API</text>
+<rect x="1360" y="157" width="360" height="135" rx="14" fill="#FFFFFF" stroke="#F59E0B" stroke-width="2"/>
+<text x="1540" y="189" text-anchor="middle" class="head">Scenario Generator</text>
+<text x="1540" y="219" text-anchor="middle" class="body">Normal • single/combined anomaly</text>
+<text x="1540" y="245" text-anchor="middle" class="body">Missing/stale data • recovery</text>
+<text x="1540" y="271" text-anchor="middle" class="small">All payloads marked simulated</text>
+
+<rect x="350" y="395" width="820" height="285" rx="20" fill="#F0FDF4" stroke="#86EFAC" stroke-width="2"/>
+<text x="378" y="430" class="groupLabel" fill="#166534">APPLICATION BACKEND</text><text x="1140" y="430" text-anchor="end" class="owner" fill="#166534">PERSON 2</text>
+<rect x="385" y="460" width="225" height="170" rx="12" fill="#FFFFFF" stroke="#22C55E" stroke-width="2"/>
+<text x="497" y="492" text-anchor="middle" class="head">FastAPI Core</text>
+<text x="497" y="523" text-anchor="middle" class="body">Authentication</text>
+<text x="497" y="548" text-anchor="middle" class="body">Role-based access</text>
+<text x="497" y="573" text-anchor="middle" class="body">REST + demo proxy</text>
+<text x="497" y="602" text-anchor="middle" class="small">Never expose DB to apps</text>
+<rect x="640" y="460" width="235" height="170" rx="12" fill="#FFFFFF" stroke="#22C55E" stroke-width="2"/>
+<text x="757" y="492" text-anchor="middle" class="head">Ingestion Service</text>
+<text x="757" y="523" text-anchor="middle" class="body">Validate and normalize</text>
+<text x="757" y="548" text-anchor="middle" class="body">Deduplicate event IDs</text>
+<text x="757" y="573" text-anchor="middle" class="body">Persist with timestamps</text>
+<text x="757" y="602" text-anchor="middle" class="small">Source provenance retained</text>
+<rect x="905" y="460" width="230" height="170" rx="12" fill="#FFFFFF" stroke="#22C55E" stroke-width="2"/>
+<text x="1020" y="492" text-anchor="middle" class="head">Alert Services</text>
+<text x="1020" y="523" text-anchor="middle" class="body">Rule results + ML score</text>
+<text x="1020" y="548" text-anchor="middle" class="body">Persist alert lifecycle</text>
+<text x="1020" y="573" text-anchor="middle" class="body">Acknowledge / resolve</text>
+<text x="1020" y="602" text-anchor="middle" class="small">Audit and notifications</text>
+
+<rect x="1220" y="395" width="540" height="285" rx="20" fill="#F5F3FF" stroke="#C4B5FD" stroke-width="2"/>
+<text x="1248" y="430" class="groupLabel" fill="#5B21B6">ML + INTEGRATION</text><text x="1730" y="430" text-anchor="end" class="owner" fill="#5B21B6">PERSON 4</text>
+<rect x="1255" y="460" width="470" height="170" rx="12" fill="#FFFFFF" stroke="#8B5CF6" stroke-width="2"/>
+<text x="1490" y="492" text-anchor="middle" class="head">Health Analysis Module</text>
+<text x="1490" y="523" text-anchor="middle" class="body">Time-window features and baseline</text>
+<text x="1490" y="548" text-anchor="middle" class="body">Isolation Forest anomaly score</text>
+<text x="1490" y="573" text-anchor="middle" class="body">Versioned assessment + reasons</text>
+<text x="1490" y="602" text-anchor="middle" class="small">Model supports review; does not diagnose</text>
+
+<rect x="40" y="755" width="480" height="215" rx="20" fill="#FDF2F8" stroke="#F9A8D4" stroke-width="2"/>
+<text x="65" y="788" class="groupLabel" fill="#9D174D">NOTIFICATIONS + LIVE EVENTS</text>
+<rect x="75" y="812" width="410" height="130" rx="12" fill="#FFFFFF" stroke="#EC4899" stroke-width="2"/>
+<text x="280" y="842" text-anchor="middle" class="head">WebSocket + FCM</text>
+<text x="280" y="872" text-anchor="middle" class="body">Live dashboard updates</text>
+<text x="280" y="898" text-anchor="middle" class="body">Patient / doctor alerts</text>
+<text x="280" y="923" text-anchor="middle" class="small">Persist delivery attempts in MySQL</text>
+
+<rect x="565" y="755" width="605" height="215" rx="20" fill="#EFFAFF" stroke="#7DD3FC" stroke-width="2"/>
+<text x="590" y="788" class="groupLabel" fill="#075985">ACTUAL DATABASE</text><text x="1140" y="788" text-anchor="end" class="owner" fill="#075985">PERSON 2</text>
+<path d="M620 834 L620 899 Q620 941 675 941 L1060 941 Q1115 941 1115 899 L1115 834 Z" fill="#FFFFFF" stroke="#0284C7" stroke-width="2"/>
+<ellipse cx="867.5" cy="834" rx="247.5" ry="22" fill="#FFFFFF" stroke="#0284C7" stroke-width="2"/>
+<text x="867" y="875" text-anchor="middle" class="head">MySQL 8 / InnoDB</text>
+<text x="867" y="899" text-anchor="middle" class="body">Users • assignments • source events • vitals</text>
+<text x="867" y="923" text-anchor="middle" class="body">Baselines • assessments • alerts • messages</text>
+<text x="867" y="953" text-anchor="middle" class="small">Views • procedures • functions • triggers • indexes</text>
+
+<rect x="1220" y="755" width="540" height="215" rx="20" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="2"/>
+<text x="1245" y="788" class="groupLabel" fill="#334155">CLOUD + RELEASE</text><text x="1730" y="788" text-anchor="end" class="owner" fill="#334155">PERSON 4</text>
+<rect x="1255" y="812" width="470" height="130" rx="12" fill="#FFFFFF" stroke="#94A3B8" stroke-width="2"/>
+<text x="1490" y="842" text-anchor="middle" class="head">Integration and QA</text>
+<text x="1490" y="872" text-anchor="middle" class="body">Docker Compose • cloud deployment</text>
+<text x="1490" y="898" text-anchor="middle" class="body">E2E tests • backup/restore</text>
+<text x="1490" y="923" text-anchor="middle" class="small">Measured performance evidence</text>
+
+<!-- arrows and labels, drawn last -->
+<!-- Clients to backend -->
+<path d="M249 292 V350 H497 V460" fill="none" stroke="#475569" stroke-width="2.5" marker-end="url(#arrow)"/>
+<text x="320" y="343" class="edgeLabel">HTTPS REST</text>
+<path d="M643 292 V365 H497 V460" fill="none" stroke="#475569" stroke-width="2.5" marker-end="url(#arrow)"/>
+<text x="653" y="358" class="edgeLabel">Login / patient APIs</text>
+<!-- simulator data -->
+<path d="M1540 292 V355 H757 V460" fill="none" stroke="#D97706" stroke-width="3" marker-end="url(#arrowOrange)"/>
+<text x="1130" y="348" text-anchor="middle" class="edgeLabel" fill="#92400E">POST /api/v1/ingest/readings — simulated event</text>
+<!-- backend control to simulator -->
+<path d="M500 395 V340 H1162 V292" fill="none" stroke="#D97706" stroke-width="2.5" stroke-dasharray="9 7" marker-end="url(#arrowOrange)"/>
+<text x="855" y="374" text-anchor="middle" class="edgeLabel" fill="#92400E">Authenticated start / stop / scenario controls</text>
+<!-- analysis bidirectional -->
+<path d="M1135 510 H1255" fill="none" stroke="#7C3AED" stroke-width="2.5" marker-end="url(#arrowPurple)"/>
+<text x="1195" y="498" text-anchor="middle" class="edgeLabel" fill="#5B21B6">Features</text>
+<path d="M1255 585 H1135" fill="none" stroke="#7C3AED" stroke-width="2.5" marker-end="url(#arrowPurple)"/>
+<text x="1195" y="608" text-anchor="middle" class="edgeLabel" fill="#5B21B6">Score + reasons</text>
+<!-- backend to DB -->
+<path d="M757 630 V755" fill="none" stroke="#0284C7" stroke-width="3" marker-end="url(#arrowBlue)"/>
+<text x="778" y="700" class="edgeLabel" fill="#075985">Insert / query</text>
+<path d="M1020 630 V695 H1050 V755" fill="none" stroke="#0284C7" stroke-width="2.5" marker-end="url(#arrowBlue)"/>
+<!-- backend to notification -->
+<path d="M1020 630 V710 H280 V812" fill="none" stroke="#DB2777" stroke-width="2.5" marker-end="url(#arrowPink)"/>
+<text x="595" y="701" text-anchor="middle" class="edgeLabel" fill="#9D174D">Publish alert / live event</text>
+<!-- notification to clients routed around left margin -->
+<path d="M75 875 H20 V225 H78" fill="none" stroke="#DB2777" stroke-width="2.5" marker-end="url(#arrowPink)"/>
+<!-- integration assistance -->
+<path d="M1490 630 V755" fill="none" stroke="#64748B" stroke-width="2" stroke-dasharray="7 6" marker-end="url(#arrow)"/>
+<text x="1510" y="700" class="edgeLabel">Deploy / test</text>
+
+<rect x="250" y="1020" width="1300" height="100" rx="14" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+<text x="900" y="1055" text-anchor="middle" class="head">Important: every demo measurement is marked SIMULATED</text>
+<text x="900" y="1085" text-anchor="middle" class="body">The simulator, MySQL database, analysis pipeline, alert lifecycle and dashboards run end-to-end.</text>
+<text x="900" y="1110" text-anchor="middle" class="small">Use synthetic data only. Anomaly scores are for demonstration and are not medical diagnoses.</text>
+</svg>
